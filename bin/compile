@@ -37,7 +37,7 @@ git remote add origin "$GIT_REPO_URL"
 
 # checkout the revision that's being deployed
 git fetch -q --depth 1 origin -a > /dev/null
-git checkout -q ${SOURCE_VERSION:-master} > /dev/null
+git checkout -q ${SOURCE_VERSION:-main} > /dev/null
 echo "-----> Fetched shallow history from $GIT_REPO_URL"
 
 # initialize all the submodules
