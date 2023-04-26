@@ -43,4 +43,5 @@ echo "-----> Fetched shallow history from $GIT_REPO_URL"
 # initialize all the submodules
 git submodule -q update --init --recursive
 echo "-----> Checked out all submodules"
+ls -la frontend/shared
 git submodule status | sed 's/^/       * /'
